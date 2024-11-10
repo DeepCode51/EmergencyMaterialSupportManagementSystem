@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <style>
+    .bc{
+      color: #333;
+    }
+    *{
+      margin: 0;
+      padding: 0;
+      outline: none;
+    }
+    /* 滚动条优化 start */
+    ::-webkit-scrollbar{
+      width:8px;
+      height:8px;
+    }
+    ::-webkit-scrollbar-track{
+      background: #f6f6f6;
+      border-radius:2px;
+    }
+    ::-webkit-scrollbar-thumb{
+      background: #cdcdcd;
+      border-radius:2px;
+    }
+    ::-webkit-scrollbar-thumb:hover{
+      background: #747474;
+    }
+    ::-webkit-scrollbar-corner {
+      background: #f6f6f6;
+    }
+    /* 滚动条优化 end */
+  </style>
+  <body style="height: 100%">
+    <div id="app" style="height: 100%;"></div>
+  </body>
+</html>

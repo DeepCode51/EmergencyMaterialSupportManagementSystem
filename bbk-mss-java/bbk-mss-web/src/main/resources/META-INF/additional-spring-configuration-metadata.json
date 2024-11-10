@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "bbk.shiro.enable",
+      "type": "java.lang.Boolean",
+      "description": "是否启用Shiro."
+  }
+] }

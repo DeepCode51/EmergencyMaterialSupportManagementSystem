@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>bbk-seed</artifactId>
+        <groupId>com.bestbigkk</groupId>
+        <version>2.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>${bbk-service-name}</artifactId>
+    <version>${bbk-version}</version>
+    <packaging>jar</packaging>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.bestbigkk</groupId>
+            <artifactId>${bbk-common-name}</artifactId>
+            <version>${bbk-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.bestbigkk</groupId>
+            <artifactId>${bbk-persistence-name}</artifactId>
+            <version>${bbk-version}</version>
+        </dependency>
+    </dependencies>
+
+</project>

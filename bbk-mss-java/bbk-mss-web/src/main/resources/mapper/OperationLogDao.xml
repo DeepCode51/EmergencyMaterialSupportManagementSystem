@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bestbigkk.persistence.dao.OperationLogDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.bestbigkk.persistence.entity.OperationLogPO">
+        <id column="id" property="id" />
+        <result column="model_name" property="modelName" />
+        <result column="action_args" property="actionArgs" />
+        <result column="create_time" property="createTime" />
+        <result column="log_description" property="logDescription" />
+        <result column="log_location" property="logLocation" />
+        <result column="log_status" property="logStatus" />
+        <result column="error_msg" property="errorMsg" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, model_name, action_args, create_time, log_description, log_location, log_status, error_msg
+    </sql>
+
+    <select id="countA" resultType="Integer">
+        SELECT COUNT(*) FROM t_operation_log;
+    </select>
+
+</mapper>

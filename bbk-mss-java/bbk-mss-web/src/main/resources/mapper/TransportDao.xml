@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bestbigkk.persistence.dao.TransportDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.bestbigkk.persistence.entity.TransportPO">
+        <id column="id" property="id" />
+        <result column="approval_id" property="approvalId" />
+        <result column="create_time" property="createTime" />
+        <result column="expect_time" property="expectTime" />
+        <result column="create_user_id" property="createUserId" />
+        <result column="transport_record" property="transportRecord" />
+        <result column="material_record" property="materialRecord" />
+        <result column="status" property="status" />
+        <result column="receiver_user_id" property="receiverUserId" />
+        <result column="transport_type" property="transportType" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, approval_id, create_time, expect_time, create_user_id, transport_record, material_record, status, receiver_user_id, transport_type
+    </sql>
+
+</mapper>

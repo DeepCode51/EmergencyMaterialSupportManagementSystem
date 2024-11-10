@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>bbk-seed</artifactId>
+        <groupId>com.bestbigkk</groupId>
+        <version>2.0-SNAPSHOT</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <version>${bbk-version}</version>
+    <artifactId>${bbk-common-name}</artifactId>
+    <packaging>jar</packaging>
+
+    <properties>
+        <!-- 拷贝工具 可方便实现对象、集合等的深拷贝 -->
+        <clone-util.version>1.9.12</clone-util.version>
+    </properties>
+
+    <dependencies>
+        <!-- 拷贝工具 可方便实现对象、集合等的深拷贝 -->
+        <dependency>
+            <groupId>uk.com.robust-it</groupId>
+            <artifactId>cloning</artifactId>
+            <version>${clone-util.version}</version>
+        </dependency>
+    </dependencies>
+
+</project>
